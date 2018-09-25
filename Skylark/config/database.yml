@@ -8,8 +8,8 @@ default: &default
   adapter: mysql2
   pool: 5
   encoding: utf8
-  username: 20148789
-  password: rh2016
+  username: *******
+  password: ******
   host: sost2.blackburn.ac.uk
 
 development:
