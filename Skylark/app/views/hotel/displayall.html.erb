@@ -1,0 +1,58 @@
+<% provide(:title, 'Hotel') %>
+<h1>Hotels</h1>
+
+
+<p id = "hotel_country ">Select Country: <select id = "country_select">
+
+  <% @country.each do | value | %>
+
+      <option id = "<%= value.id %>" value = "<%= value.id %>"><%= value.name %></option>
+  <% end %>
+</select>
+  <input id = "hotel_search" type = "button" value = "search"></p>
+
+
+ <% @hotel.each do | hotel | %>
+
+    <div class = "hotel_container">
+      <h1 id = "name"><%= hotel.Name %></h1>
+      <p id = "city"> City: <%= hotel.city.name %></p>
+      <p id = "cost">Cost Per Night: £ <%= hotel.Cost_Per_Night %></p>
+
+      <p id = "inclusive">All Inclusive:
+        <% if hotel.All_Inclusive == true %>
+          Yes</p>
+            <% else %>
+          No</p>
+        <% end %>
+
+        <p id = "swimming"> Swimming Pool:
+          <% if hotel.Swimming_Pool == true %>
+              Yes</p>
+          <% else %>
+              No</p>
+          <% end %>
+      </div>
+    <% end %>
+
+<script>
+
+  $(document).ready()
+  {
+      $("#hotel_search").click(function (caller) {
+
+          alert($("#country_select option:selected").text())
+
+          search()
+      })
+
+      function search() {
+
+          $.get('<%= $server_route %>hotel/search', {name: $("#country_select option:selected").text()}, function (result) {
+
+              alert(country.value)
+          })
+      }
+  }
+
+</script>

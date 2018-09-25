@@ -1,0 +1,9 @@
+<% provide(:title, 'Cities') %>
+
+
+<% @city.each do |city| %>
+<ol>
+  <li><%= city.name %></li>
+  <li><%= city.country.name %></li>
+</ol>
+<% end %>

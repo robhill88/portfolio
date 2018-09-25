@@ -1,0 +1,221 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body{
+
+    position: relative;
+    margin: 0 0 100px;
+}
+
+#container{
+
+    text-align: center;
+}
+
+nav{
+    background-color: blue;
+    margin: 0;
+    overflow: hidden;
+    text-align: center
+}
+
+nav ul{
+
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+
+    display: inline-block;
+    list-style-type: none;
+    font-size: 1.5em;
+    font-family: "Eras Demi ITC", "Eras ITC", "Eras Light ITC", "sans-serif";
+}
+
+h1, h2, p{
+    font-family: "Eras Demi ITC", "Eras ITC", "Eras Light ITC", "sans-serif";
+    color: #1f648b;
+}
+
+
+nav ul li a{
+
+    color: yellow;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+
+    background-color: yellow;
+    color: #1f648b;
+}
+
+
+#basket{
+
+    height: 72px;
+    width: 200px;
+    float: right;
+    margin-top: -80px;
+    margin-right: 50px;
+
+}
+
+#basket img{
+
+    margin-right: 100px;
+    height: 50px;
+    width: 50px;
+}
+
+
+#top{
+
+    height: 10%;
+    background-color: yellow;
+    text-align: center;
+}
+
+#logo{
+
+    position: relative;
+}
+
+
+#logo img{
+
+    position: absolute;
+    height: 60px;
+    width: 250px;
+    margin-top: -70px;
+}
+
+#logo h1 {
+
+    color: #1f648b;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    position: relative;
+    z-index: 1;
+    font-size: 5em;
+    font-family: "Eras Demi ITC", "Eras ITC", "Eras Light ITC", "sans-serif";
+}
+
+#totalCost{
+
+    color: blue;
+    font-size: 2em;
+    margin-top: -45px;
+    margin-left: 30px;
+
+}
+
+.packageContainer{
+
+    margin-left: 50px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.description{
+
+    margin-left: 350px;
+    margin-top: -300px;
+    font-family: "Eras Demi ITC", "Eras ITC", "Eras Light ITC", "sans-serif";
+    color: #1f648b;
+}
+
+#city{
+
+    text-align: center;
+}
+
+.payNow, .addToBasket{
+
+    postion: relative;
+    margin: 5px;
+}
+
+
+.pic{
+
+    height: 300px;
+    width: 200px;
+    margin-left: -250px;
+}
+
+
+#build{
+
+    background-color: yellow;
+    height: 300px;
+    width: 400px;
+    margin-left: 200px;
+    border-color: #1f648b;
+    border-bottom-width: thin;
+    border-style: solid;
+    font-family: "Eras Demi ITC", "Eras ITC", "Eras Light ITC", "sans-serif";
+    color: #1f648b;
+    position: absolute;
+}
+
+
+#build_search{
+
+    margin-top: 30px;
+}
+
+
+#build_search p{
+
+    padding: 2px;
+}
+
+#front_pic{
+
+    positon: relative;
+    height: 300px;
+    width: 600px;
+}
+
+
+#order_complete_image{
+
+    height: 400px;
+    width: 800px;
+}
+
+
+footer{
+
+    position: fixed;
+    background-color: blue;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Eras Demi ITC", "Eras ITC", "Eras Light ITC", "sans-serif";
+}
+
+footer p{
+
+    color: yellow;
+}

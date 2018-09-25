@@ -1,0 +1,13 @@
+<h1>Flights</h1>
+
+
+
+<% @flight.each do |flight| %>
+
+
+  <h2><%= flight.depart.name %> to <%= flight.arrival.name %></h2>
+  <p><%= flight.Departure_Date %></p>
+  <p><%= flight.Departure_Time %></p>
+
+
+<% end %>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %></title>
+      <%= csrf_meta_tags %>
+     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <section id = top>
+      <div id = logo>
+        <h1>SkyLark</h1>
+          <img src = "<%= $server_route %>images/skylark_logo.png" alt = "logo">
+      </div>
+
+      <div id = basket>
+        <img src = '<%= $server_route %>images/basket.png' alt = 'basket'>
+        <p id = 'totalCost'>£0</p>
+      </div>
+    </section>
+
+    <nav>
+      <ul>
+        <li><%= link_to("Home", {:controller => 'index', :action => 'index'}) %></li>
+        <li><%= link_to("Package Holiday", {:controller => 'packageholiday', :action => 'displayall'}) %></li>
+        <li><%= link_to("Cruise", {:controller => 'cruise', :action => 'displayall'}) %></li>
+        <li><%= link_to("Hotels", {:controller => 'hotel', :action => 'displayall'}) %></li>
+        <li><%= link_to("Flights", {:controller => 'flight', :action => 'displayall'}) %></li>
+        <li><%= link_to("Checkout", {:controller => 'basket', :action => 'checkout'}) %></li>
+      </ul>
+    </nav>
+
+    <div id = "container">
+      <%= yield %>
+    </div>
+
+
+  <footer>
+    <p> Copyright @RobertHill@Skylark Industrys  || Contact phone 01252 000000 || Email rob@skylarkindustry.co.uk </p>
+    <p> This website is for educational use only, transactions are unavailble, the payment forms do not store or use the data</p>
+  </footer>
+  </body>
+
+
+  <script>
+
+    $(document).ready()
+    {
+        $.get("<%= $server_route %>basket/total", function (result){
+
+              $('#totalCost').text(result)
+        })
+    }
+  </script>
+</html>

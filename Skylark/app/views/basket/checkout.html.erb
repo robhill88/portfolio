@@ -1,0 +1,49 @@
+<% provide(:title, 'Checkout') %>
+<h1>Checkout</h1>
+<% if cookies.has_key?(:cart) %>
+<% @product.each do |package| %>
+
+      <div class = "paymentDescription">
+        <h1 id = "city"><%= package.Duration %> nights in <%= package.flight_home.depart.city.country.name %></h1>
+        <p id = "from"> Flying From <%= package.flight_to.depart.city.name %> to <%= package.flight_home.depart.city.name %></p>
+        <p id = "dates"> Start Date <%= package.flight_to.Departure_Date %></p>
+        <p>End Date <%= package.flight_home.Departure_Date %></p>
+        <p>No of Adults: <%= package.adults %></p>
+        <p>No of Children: <%= package.children %></p>
+        <p id = "cost">£<%= package.Cost %></p>
+      </div>
+
+    <form>
+      <input id = "<%= package.id %>" class = "remove" type = "button" value = "remove">
+    </form>
+<% end %>
+
+      <p id = "basket_total">0 </p>
+      <form>
+        <a href = "<%= $server_route %>basket/payment"><input id = "confirm" type = "button" value = "confirm"></a>
+      </form>
+
+<% end %>
+<script>
+    $(document).ready()
+    {
+        $(".remove").click(function (caller) {
+
+            remove(caller.target);
+        })
+
+        function remove(button) {
+
+            $.get("<%= $server_route %>basket/remove", {id: button.id}, function (result) {
+              location.reload()
+
+            })
+        }
+
+
+        $.get("<%= $server_route %>basket/total", function(result){
+
+            $("#basket_total").text(result)
+        })
+    }
+</script>

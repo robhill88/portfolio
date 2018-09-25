@@ -1,0 +1,35 @@
+<h1> Payment</h1>
+<p> Details are not stored</p>
+
+
+<div id = paymentContainer>
+
+  <h2> Card Details</h2>
+  <form id = paymentForm>
+    <select>
+      <option value = "credit">credit card</option>
+      <option value = "visa">visa debit</option>
+      /<option value = "visa meastro">visa meastro</option>
+    </select>
+
+    <p>Email: <input type = "text" value = "email"></p>
+    <p>Name on Card: <input type = "text" value = "rob"></p>
+    <p>Card Number: <input type = "text" size = "12"></p>
+    <p>Account Number: <input type = "text" size = "8"></p>
+    <p>Sort Code: <input type = "text" size = "6"></p>
+    <p>Expire date: <input type = "month"></p>
+    <p>Issue Number: <input type = "number" min = "1" max = "100"></p>
+
+
+    <h2> Billing Address </h2>
+
+    <p>Postcode: <input type = "text" size = "8"></p>
+    <p>House Number: <input type = "number" min = "0"></p>
+    <p>Address Line: <input type = "text" size = "100"></p>
+    <p>Town: <input type = "text" size = "50"></p>
+    <p>County: <input type = text size = "50"></p>
+    <p></p>
+
+    <a href = "<%= $server_route %>customer_order/display_order"><input id = "confirm" type = button value = "confirm"></a>
+  </form>
+</div>

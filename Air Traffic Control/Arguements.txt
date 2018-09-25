@@ -1,0 +1,12 @@
+run configurations options
+
+tick, include systems libraries when searching for a main class
+project = Air Traffic Control
+main class = jade.Boot
+program arguements = -gui Aeroplane:Aeroplane;ATC:ATC;FuelS:FuelS;RunwayS:RunwayS;
+
+
+
+
+
+

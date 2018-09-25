@@ -1,0 +1,54 @@
+<% provide(:title, 'Package') %>
+<h1> Package Holidays</h1>
+
+<p><input type = "text" value = "search" length = "50"> <input id = "search" type = "button" value = "search"></p>
+
+<% @package.each do |packageholiday| %>
+
+<div class = "packageContainer">
+
+  <img class = "pic" src = "<%= $server_route %>images/<%= packageholiday.image %>">
+
+  <div class = "description">
+    <h1 id = "city"><%= packageholiday.Duration %> nights in <%= packageholiday.flight_home.depart.city.country.name %></h1>
+    <p id = "from"> Flying From <%= packageholiday.flight_to.depart.city.name %> to <%= packageholiday.flight_home.depart.city.name %></p>
+    <p id = "hotel"> Staying at the <%= packageholiday.hotel.Name %></p>
+    <p id = "cost">£<%= packageholiday.Cost %></p>
+
+    <form>
+      <input id = "<%= packageholiday.id %>" type = "button" class = "addToBasket" value = "add to basket">
+    </form>
+    </div>
+</div>
+
+<% end %>
+
+
+<script>
+
+  $(document).ready()
+  {
+      $(".addToBasket").click(function (caller) {
+
+          addToBasket(caller.target);
+      })
+
+      function addToBasket(button) {
+
+          $.get("<%= $server_route %>basket/addToBasket", {id: button.id}, function (result) {
+            $("#totalCost").text(result)
+          })
+      }
+
+
+      $("#search").click(function(caller){
+
+          search(caller.target);
+      })
+
+      function search(button){
+
+          alert("not yet functional")
+      }
+  }
+</script>

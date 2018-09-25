@@ -1,0 +1,30 @@
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\bin\Release\guitar tuner final build.exe.config
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\bin\Release\guitar tuner final build.exe
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\bin\Release\guitar tuner final build.pdb
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\bin\Release\NAudio.dll
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\bin\Release\NAudio.xml
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\obj\Release\guitar_tuner_final_build.Form1.resources
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\obj\Release\guitar_tuner_final_build.Properties.Resources.resources
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.csproj.GenerateResource.Cache
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.csproj.CoreCompileInputs.cache
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.exe
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.pdb
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.csprojResolveAssemblyReference.cache
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\bin\Release\MathNet.Numerics.dll
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\bin\Release\MathNet.Numerics.xml
+C:\Users\robhi\source\repos\guitar tuner final build\guitar tuner final build\obj\Release\guitar_tuner_final_build.frmHelp.resources
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\bin\Release\guitar tuner final build.exe.config
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\bin\Release\guitar tuner final build.exe
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\bin\Release\guitar tuner final build.pdb
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\bin\Release\MathNet.Numerics.dll
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\bin\Release\NAudio.dll
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\bin\Release\MathNet.Numerics.xml
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\bin\Release\NAudio.xml
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.csprojResolveAssemblyReference.cache
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\obj\Release\guitar_tuner_final_build.Form1.resources
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\obj\Release\guitar_tuner_final_build.frmHelp.resources
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\obj\Release\guitar_tuner_final_build.Properties.Resources.resources
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.csproj.GenerateResource.Cache
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.csproj.CoreCompileInputs.cache
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.exe
+C:\Users\robhi\Downloads\guitar tuner final build\guitar tuner final build\obj\Release\guitar tuner final build.pdb

@@ -1,0 +1,32 @@
+<% provide(:title, 'Home') %>
+<h1> Welcome</h1>
+
+<section id = "buildAholiday">
+  <div id = "build">
+
+    <h1> Self Booking</h1>
+    <p id = "flying from ">Flying From: <select id = "country_select">
+
+        <% @country.each do | value | %>
+
+          <option value = "<%= value.name %>"><%= value.name %></option>
+    <% end %>
+    </select>
+
+    <p id = "flying Too ">Flying Too: <select id = "country_select">
+
+      <% @country.each do | value | %>
+
+          <option value = "<%= value.name %>"><%= value.name %></option>
+      <% end %>
+    </select>
+
+    <p id = "date">Start Date: <input type = "date"></p>
+    <p id = "date">End Date: <input type = "date"></p>
+
+    <input id = "build_search" type = "button" value = "search">
+  </div>
+
+
+  <img id = "front_pic" src = "<%= $server_route %>images/airplane.jpg ">
+</section>

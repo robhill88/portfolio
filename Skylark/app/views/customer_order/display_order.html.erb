@@ -1,0 +1,23 @@
+<img id = "order_complete_image" src = "<%= $server_route %>images/airplane 2.jpg">
+
+
+<h1> Order Complete </h1>
+
+<div id = "completeform">
+
+    <% order = CustomerOrder.last  %>
+    <p id = "customer_number"> Customer Number <%= order.customer_id %></p>
+    <p id = "order_number"> Your Order Number: <%= order.id %>
+    <p id = "product">For Item number: <%= order.customerItem %></p>
+    <p id = "total"> Total Cost: <%= order.totalCost %></p>
+</div>
+
+<script>
+
+    $(document).ready()
+    {
+        $.get('<%= $server_route %>customer_order/finish', function(result){
+
+        })
+    }
+</script>
